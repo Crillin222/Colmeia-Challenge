@@ -1,0 +1,19 @@
+{
+    "validUser": {
+        "email": "qa@test.com",
+        "password": "123456",
+        "name": "QA Tester"
+    },
+    "invalidUser": {
+        "email": "err@usrr.com",
+        "password": "654321"
+    },
+    "incorrectMailFormart": {
+        "email": "qatest.com",
+        "password": "123456"
+    },
+    "nullUser": {
+        "email": "",
+        "password": ""
+    }
+}
