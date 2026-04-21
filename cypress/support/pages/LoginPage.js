@@ -1,9 +1,16 @@
 class LoginPage {
     get emailInput() { return cy.get('#email') }
     get passwordInput() { return cy.get('#password') }
-    get loginBtn() { return cy.get('#submit') }
-    get emailErrorMessage() { return cy.get('#email').siblings('.text-red-500') }
-    get passwordErrorMessage() { return cy.get('#password').siblings('.text-red-500') }
+    get loginBtn() { return cy.get('button[type="submit"]') }
+    get forgotPasswordLink() { return cy.contains('a', 'Esqueceu sua senha?') }
+    
+    get emailErrorMessage() { 
+        return cy.get('#email').parent().parent().find('.text-red-500') 
+    }
+    
+    get passwordErrorMessage() { 
+        return cy.get('#password').parent().parent().find('.text-red-500') 
+    }
 
     login(email, password) {
         if (email) this.emailInput.type(email);
@@ -18,6 +25,7 @@ class LoginPage {
             this.passwordInput.focus().blur();
         }
     }
+    
 }
 
 export default new LoginPage();

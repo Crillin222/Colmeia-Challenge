@@ -1,10 +1,5 @@
 {
-  "name": "colmeia-qa-challenge",
-  "version": "1.0.0",
-  "scripts": {
-    "cy:open": "cypress open"
-  },
   "devDependencies": {
-    "cypress": "^13.17.0"
+    "cypress": "^15.14.0"
   }
 }

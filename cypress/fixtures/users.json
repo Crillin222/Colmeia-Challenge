@@ -8,7 +8,7 @@
         "email": "err@usrr.com",
         "password": "654321"
     },
-    "incorrectMailFormart": {
+    "incorrectMailFormat": {
         "email": "qatest.com",
         "password": "123456"
     },
